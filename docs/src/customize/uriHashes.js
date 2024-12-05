@@ -7,7 +7,8 @@ export {
     URI_HASH_EMPTY,
     URI_HASH_HOME,
     URI_HASH_UNSTYLED,
-    URI_HASH_MASTER_DETAIL
+    URI_HASH_MASTER_DETAIL,
+    URI_HASH_KOLIBRI_INFO
 }
 
 /**
@@ -16,6 +17,7 @@ export {
  *      | "#home"
  *      | "#unstyled"
  *      | "#masterDetail"
+ *      | "#kolibriInfo"
  *      }  UriHashType
  * UriHashes must be unique, start with a hash character and be formatted like in proper URIs.
  */
@@ -24,6 +26,7 @@ export {
 /** @type { UriHashType } */ const URI_HASH_HOME          = "#home";  // should always be available
 /** @type { UriHashType } */ const URI_HASH_UNSTYLED      = "#unstyled";
 /** @type { UriHashType } */ const URI_HASH_MASTER_DETAIL = "#masterDetail";
+/** @type { UriHashType } */ const URI_HASH_KOLIBRI_INFO  = "#kolibriInfo";
 
 /**
  * Typesafe creation of link hrefs. One cannot create hrefs if the uriHash is not registered by type.

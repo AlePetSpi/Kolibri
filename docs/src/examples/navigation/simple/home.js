@@ -1,5 +1,5 @@
 import {dom}                                    from "../../../kolibri/util/dom.js";
-import {URI_HASH_UNSTYLED, href, URI_HASH_HOME} from "../../../customize/uriHashes.js";
+import {URI_HASH_UNSTYLED, href, URI_HASH_HOME, URI_HASH_KOLIBRI_INFO} from "../../../customize/uriHashes.js";
 import {Page}                                   from "../../../kolibri/navigation/page/page.js";
 import {KOLIBRI_LOGO_SVG}                       from "../../../kolibri/style/kolibriStyle.js";
 
@@ -44,6 +44,7 @@ const [contentElement] = dom(`
         <section class="buttons">
           <a class="btn primary glow" ${href(URI_HASH_HOME)}>Home Page</a> 
           <a class="btn accent  glow" ${href(URI_HASH_UNSTYLED)}>Unstyled</a>
+          <a class="btn accent  glow" ${href(URI_HASH_KOLIBRI_INFO)}>Kolibriinfo</a>
         </section>
     
         <section>
